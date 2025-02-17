@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 para garantir que caracteres especiais e acentuados sejam exibidos corretamente -->
+    <meta charset="UTF-8">
+    
+    <!-- Torna a página responsiva, ajustando o layout conforme o tamanho da tela do dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página, exibido na aba do navegador -->
+    <title>Acesso ao Sistema</title>
+</head>
+<body>
+    <!-- Título principal da página -->
+    <h1>Acesso ao Sistema</h1>
+
+    <!-- Formulário para login do usuário -->
+    <form action="/auth/login" method="POST">
+        <!-- Campo de entrada para o e-mail do usuário -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required> <!-- O campo de e-mail é obrigatório e precisa ser um e-mail válido -->
+        <br><br>
+
+        <!-- Campo de entrada para a senha do usuário -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required> <!-- O campo de senha é obrigatório -->
+        <br><br>
+
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Entrar</button>
+    </form>
+
+    <!-- Link para a página de registro caso o usuário não tenha uma conta -->
+    <p>Não possui uma conta? <a href="/auth/register">Cadastre-se aqui</a></p>
+</body>
+</html>
