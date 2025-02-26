@@ -1,0 +1,25 @@
+
+{{#*inline "title"}}Página de Vendas{{/inline}}
+
+<h2>Página de Vendas de Ingressos</h2>
+
+<form action="/vendas" method="POST">
+<style>
+  .bt-comprar:hover{
+    background-color: darkgreen;
+  }
+  .form-group {
+    margin-bottom: 15px;
+}
+
+</style>
+{{#each tickets}} 
+  <div class="form-group">
+    <label for="vip">Ingresso {{this.dataValues.nome}}: R$ {{this.dataValues.preco}}</label>
+    <input type="number" id="{{this.dataValues.nome}}" name="{{this.dataValues.nome}}" min="0" value="0"> 
+  </div>
+
+{{/each}}
+
+  <button type="submit" class="bt-comprar">Comprar</button>
+</form>
