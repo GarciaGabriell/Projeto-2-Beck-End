@@ -1,2 +1,2 @@
-# Projeto-2-Beck-End
-Projeto 2 Beck-End Vendas de Ingressos
+# Projeto-2-Back-End
+Projeto 2 Back-End Vendas de Ingressos
